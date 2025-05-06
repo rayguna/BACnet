@@ -1,0 +1,30 @@
+# Electricity Fundamentals
+
+Electricity powers nearly everything in a building—from lights and HVAC to control panels and automation systems. Understanding a few key concepts helps make sense of how building automation works safely and reliably.
+
+🔌 Basic of Electricity
+Electricity is the flow of electrons through wires. It’s measured in:
+
+- Voltage (V): the force that pushes the current (like water pressure).
+
+- Current (A): the flow of electricity (like water flow).
+
+- Power (W): how much work electricity does, calculated as Voltage × Current.
+
+In buildings, we often use 120V or 240V for general systems, and 24V for control circuits.
+
+🔁 Transformer:  change voltage
+- A transformer changes voltage from one level to another—usually from high voltage to lower control voltage (like 120V to 24V). This is essential in building automation, where control systems often run at 24V AC or DC to reduce shock risks.
+
+⚠️ Fuse and MCB: protect from overloads
+- Both are safety devices that stop the flow of electricity when there’s too much current (overload or short circuit).
+
+- Fuse: A small wire that melts when overloaded—needs to be replaced once blown.
+
+- MCB (Miniature Circuit Breaker): A switch that trips when current exceeds its rating (e.g., 10A, 16A, 20A)—it can be reset.
+
+🔄 Relay: switches used to control devices remotely.
+- A relay is a small electrically operated switch. It lets a low-voltage signal (like 24V) control a higher voltage circuit (like 240V). It’s used in building automation to let control panels turn equipment on and off.
+
+⚙️ Contactor: switches used to control devices remotely.
+- A contactor is a heavy-duty version of a relay, used to switch high-power loads like motors, heaters, and fans. Rated in amperes (e.g., 30A, 60A) or kilowatts (e.g., 5kW), contactors are built for frequent switching and include features like arc suppression and auxiliary contacts, making them suitable for demanding industrial applications.
