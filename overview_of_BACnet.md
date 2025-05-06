@@ -1,0 +1,99 @@
+# Overview of BACnet Architecture in Building Automation Systems
+A building automation system (BAS) is the brain of a smart building, managing systems like HVAC, lighting, and security to boost comfort, efficiency, and reliability. BACnet makes this possible by allowing devices from different brands to communicate seamlessly within the smart building network.
+
+## What is BACnet?
+<b>BACnet (Building Automation and Control network)</b> is a communication language that lets devices in a building "talk" to each other — like lights, air conditioners, thermostats, sensors, and security systems. It’s like Wi-Fi for building equipment, but designed especially for automation.
+
+Imagine a big smart building — like a school, hospital, or office — with lots of equipment. BACnet connects all those devices so they can share data and work together efficiently.
+
+For example:
+
+- A thermostat senses that it’s getting too hot.
+
+- It tells a controller to turn on the air conditioner.
+
+- The controller sends a signal to a fan unit, which starts cooling the room.
+
+- A supervisor keeps a log of this event and displays it on your computer.
+
+BACnet allows all this to happen even if the equipment is made by different manufacturers — because they all speak BACnet.
+
+## Visual Diagram Correlating the main BACnet Components Divided into Levels
+
+         [User Interface]
+                |
+                v
+     [Supervisor Software]         ← Management Level
+                |
+                v
+        [Router / Gateway]         ← Integration Level
+                |
+                v
+          [Controllers]            ← Field Controller Level
+                |
+                v
+[Field Devices: Thermostats, 
+ Sensors, I/O Modules]             ← Sensor/Actuator Level
+
+## Main BACnet Components
+
+1. Controllers – 🧠 The Brains: Small brain that tells devices what to do
+- These are small computers that control equipment like fans, pumps, or lights.
+
+- They get input (e.g., from a thermostat or motion sensor) and make decisions (e.g., turn the fan on).
+
+- Think of them as automatic workers.
+
+2. Supervisors – 👨‍💼 The Managers: Big brain that watches over the building and logs activity
+- These are central computers or software that monitor and coordinate all the controllers.
+
+- They show graphs, generate reports, and help technicians manage the building.
+
+- Think of them as the building's brain center or dashboard.
+
+3. Routers – 🚦 The Traffic Directors: Moves messages between different BACnet networks
+- BACnet networks can have multiple sections (like different floors or wings).
+
+- Routers help pass messages between these sections.
+
+- Like highway interchanges for data traffic.
+
+4. Gateways – 🌍 The Translators: Translates BACnet to other device languages
+- Sometimes you have older devices or non-BACnet equipment.
+
+- A gateway translates between BACnet and another language (e.g., Modbus or LON).
+
+- Like a language interpreter between teams.
+
+5. Communicating Thermostats – 🌡️ Smart Sensors + Mini Controllers: Senses temperature and talks directly to the system
+- These are thermostats that talk using BACnet.
+
+- They can share the temperature and also control HVAC equipment directly.
+
+- Like a smart thermostat with a voice.
+
+6. I/O Modules – 🎛️ The Hands and Ears: Lets devices send signals in and out (e.g., temperature, light control)
+- These are Input/Output boards connected to controllers.
+
+- Inputs (I) = sensors (e.g., temperature, motion, smoke)
+
+- Outputs (O) = devices to control (e.g., fans, lights)
+
+- They allow the controller to feel and act.
+
+## Example of How They Work Together
+
+1. A <b>communicating thermostat</b> sees that Room 101 is too cold.
+
+2. It sends that info via BACnet to a <b>controller</b>.
+
+3. The controller turns on a heater, using signals sent through an <b>I/O module</b>.
+
+4. A <b>supervisor</b> logs that action, so a building manager can see what happened.
+
+5. If Room 101 is on a different network branch, a <b>router</b> helps the message travel.
+
+6. If the heater uses a different protocol, a <b>gateway</b> helps translate the command.
+
+
+<hr>
